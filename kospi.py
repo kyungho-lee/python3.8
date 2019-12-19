@@ -6,7 +6,7 @@ import requests
 import bs4
 
 # 이 주소로 요청을 보내면 응답으로 HTML파일이 도착함.
-html = requests.get('ttps://finance.naver.com/sise/sise_index.nhn?code=KOSPI')
+html = requests.get('https://finance.naver.com/sise/sise_index.nhn?code=KOSPI')
 
 # html.text 를 내가 보기 좋게 접근할 수 있게 변경.
 soup = bs4.BeautifulSoup(html.text,'html.parser')
